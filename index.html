@@ -4,177 +4,143 @@
   <meta charset="UTF-8" />
   <title>Portfolio | Charles Prévost</title>
   <link rel="stylesheet" href="style.css" />
-  <script type="text/javascript" src="darkmode.js" defer></script>
+  <script src="darkmode.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
+
 <body class="fade-in">
 
-  <header class="slide-in scroll-reveal">
-    <nav>
-      <a href="#home">Accueil</a>
-      <a href="#about">À propos</a>
-      <a href="#projects">Projets</a>
-      <a href="#contact">Contact</a>
-      <button id="theme-switch">
-     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-    </button> 
-    </nav>
-    </header>
-    
+<header class="slide-in scroll-reveal">
+  <nav>
+    <a href="#home">Accueil</a>
+    <a href="#about">À propos</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <main>
-    <section id="home" class="scroll-reveal">
-      <div class="home-container">
-        <div class="texte">
-          <h1>Je suis Charles Prévost, Étudiant en BUT MMI</h1>
-          <p>
-            Passionné de jeux vidéos et d'Internet depuis tout petit, après l'obtention de mon baccalauréat en STI2D Option Systèmes d'Informations Numérique.
-            J'ai décidé de continuer mes études en BUT Métiers du Multimédia et de l'Internet dans le parcours Développement Web et Dispositifs Interactifs.
-            Ce cursus était pour moi une suite logique à ce que je voulais produire que cela soit dans la communication numérique ou dans le web.
-          </p>
-          <button class="connaitre" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
-            Me connaître
-          </button>
-        </div>
-        <div class="image">
-          <img src="img/charlesmii.png" alt="Mii" />
-        </div>
-      </div>
-    </section>
+<main>
 
-    <section id="about" class="scroll-reveal">
-      <h2>À propos de moi</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Je suis étudiant en développement web passionné par le design, les jeux vidéos, l'e-sport, le football, la culture japonaise et la musique. Mes références marquantes étant Cyberpunk 2077, ou bien encore League Of Legends. Curieux, autonome et toujours en quête d'apprentissage, j’aime transformer des idées en produits numériques concrets.</p>
-          <p>Mes domaines de prédilection incluent le développement front-end, l'intégration responsive, et surtout le design graphique.</p>
-          <p>En ce moment, j'essaye de maitriser davantage les outils Adobe, j'apprends également TypeScript et React en formation continue.</p>
-          <p>En ce qui concerne mes références musicales, mes références sont Starfall, Joon, Bixby, Keshi, Heylog, Kendrick Lamar ainsi que de nombreux petits artistes.</p>
-        </div>
-
-        <div class="logos">
-          <h2>Mes compétences</h2>
-          <div class="logos-slide scroll-reveal">
-            <span class="tooltip"><img class="html" src="img/html-logo.svg"/><span class="tooltip-text">HTML</span></span>
-            <span class="tooltip"><img src="img/css-logo.svg"/><span class="tooltip-text">CSS</span></span>
-            <span class="tooltip"><img src="img/js-logo.svg"/><span class="tooltip-text">JavaScript</span></span>
-            <span class="tooltip"><img src="img/php-logo.svg"/><span class="tooltip-text">PHP</span></span>
-            <span class="tooltip"><img src="img/wordpress-logo.svg"/><span class="tooltip-text">WordPress</span></span>
-            <span class="tooltip"><img src="img/photoshop-logo.svg"/><span class="tooltip-text">Photoshop</span></span>
-            <span class="tooltip"><img src="img/illustrator-logo.svg"/><span class="tooltip-text">Illustrator</span></span>
-            <span class="tooltip"><img src="img/premierepro-logo.svg"/><span class="tooltip-text">Premiere Pro</span></span>
-            <span class="tooltip"><img src="img/aftereffect-logo.svg"/><span class="tooltip-text">After Effects</span></span>
-            <span class="tooltip"><img src="img/jquery-logo.svg"/><span class="tooltip-text">jQuery</span></span>
-            <span class="tooltip"><img src="img/Bootstrap-logo.svg"/><span class="tooltip-text">Bootstrap</span></span>
-            <span class="tooltip"><img src="img/typescript-logo.svg"/><span class="tooltip-text">TypeScript</span></span>
-          </div>
-          <div class="logos-slide scroll-reveal">
-            <!-- Duplication pour effet infini -->
-            <span class="tooltip"><img src="img/html-logo.svg"/><span class="tooltip-text">HTML</span></span>
-            <span class="tooltip"><img src="img/css-logo.svg"/><span class="tooltip-text">CSS</span></span>
-            <span class="tooltip"><img src="img/js-logo.svg"/><span class="tooltip-text">JavaScript</span></span>
-            <span class="tooltip"><img src="img/php-logo.svg"/><span class="tooltip-text">PHP</span></span>
-            <span class="tooltip"><img src="img/wordpress-logo.svg"/><span class="tooltip-text">WordPress</span></span>
-            <span class="tooltip"><img src="img/photoshop-logo.svg"/><span class="tooltip-text">Photoshop</span></span>
-            <span class="tooltip"><img src="img/illustrator-logo.svg"/><span class="tooltip-text">Illustrator</span></span>
-            <span class="tooltip"><img src="img/premierepro-logo.svg"/><span class="tooltip-text">Premiere Pro</span></span>
-            <span class="tooltip"><img src="img/aftereffect-logo.svg"/><span class="tooltip-text">After Effects</span></span>
-            <span class="tooltip"><img src="img/jquery-logo.svg"/><span class="tooltip-text">jQuery</span></span>
-            <span class="tooltip"><img src="img/Bootstrap-logo.svg"/><span class="tooltip-text">Bootstrap</span></span>
-            <span class="tooltip"><img src="img/typescript-logo.svg"/><span class="tooltip-text">TypeScript</span></span>
-          </div>
-        </div>
-        <button id="open-cv-btn">Voir mon CV</button>
-      </div>
-    </section>
-
-    <section id="projects" class="scroll-reveal cards-container">
-      <h2>Mes projets</h2>
-      <div class="cards-container scroll-reveal">
-
-  <div class="card scroll-reveal">
-    <img src="img/starfall.jpg" alt="Application Starfall" />
-    <h3>Starfall Website</h3>
-    <p>Une maquette d'un site web réalisée sur Figma du chanteur Starfall (Figma)</p>
-    <button  onclick="window.open('https://www.figma.com/design/v9Lw83lZZqKEiweCfdJkuY/Interface?m=auto&t=YQNB9i6bnll3k8Rh-12', '_blank')">Emmenez-moi</button>
+<!-- HOME -->
+<section id="home" class="scroll-reveal">
+  <div class="home-container">
+    <div class="texte">
+      <h1>Je suis Charles Prévost, Étudiant en BUT MMI</h1>
+      <p>
+        Passionné de jeux vidéos et d'Internet depuis tout petit...
+      </p>
+      <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+        Me connaître
+      </button>
+    </div>
+    <div class="image">
+      <img src="img/charlesmii.png" alt="Mii" />
+    </div>
   </div>
+</section>
 
-  <div class="card scroll-reveal">
-    <img src="img/bourgachard.png" alt="Site internet de l'Hôpital de Bourg-Achard" />
-    <h3>Site internet de l'Hôpital de Bourg-Achard</h3>
-    <p>Création du site internet de l'Hôpital de Bourg-Achard sur le site du CHI d'Elbeuf (WordPress)</p>
-    <button onclick="window.open('https://chi-elbeuf-louviers.fr/hopital-pierre-hurabielle/', '_blank')">Emmenez-moi</button>
+<!-- PROJECTS -->
+<section id="projects" class="scroll-reveal">
+  <h2>Mes projets</h2>
+
+  <div class="cards-container">
+
+    <!-- STARFALL -->
+    <div class="card">
+      <img src="img/starfall.jpg" alt="Application Starfall" />
+      <h3>Starfall Website</h3>
+      <p>Maquette Figma</p>
+      <button class="open-modal"
+        data-title="Starfall Website"
+        data-description="Maquette complète réalisée sur Figma avec réflexion UX, wireframes, UI kit et design system."
+        data-extra="Technologies : Figma | Durée : 2 semaines | Travail individuel">
+        Voir plus
+      </button>
+    </div>
+
+    <!-- HOPITAL -->
+    <div class="card">
+      <img src="img/bourgachard.png" alt="Hôpital Bourg-Achard" />
+      <h3>Site Hôpital Bourg-Achard</h3>
+      <p>Création WordPress</p>
+      <button class="open-modal"
+        data-title="Site Hôpital Bourg-Achard"
+        data-description="Création du site internet de l'hôpital sur le site du CHI d'Elbeuf."
+        data-extra="Technologies : WordPress | Intégration | Responsive design">
+        Voir plus
+      </button>
+    </div>
+
+    <!-- JEU VIDEO -->
+    <div class="card">
+      <img src="img/projet4.png" alt="Everybody's Guilty" />
+      <h3>Everybody's Guilty</h3>
+      <p>Jeu vidéo d'enquête</p>
+      <button class="open-modal"
+        data-title="Everybody's Guilty"
+        data-description="Jeu vidéo d'enquête développé dans le cadre d'un projet académique."
+        data-extra="Technologies : JavaScript | Narration interactive | Travail en équipe">
+        Voir plus
+      </button>
+    </div>
+
+    <!-- COURT METRAGE -->
+    <div class="card">
+      <img src="img/miniature_virtualduality.png" />
+      <h3>Virtual Duality</h3>
+      <p>Court-métrage Deauville Green Awards</p>
+      <button class="open-modal"
+        data-title="Virtual Duality"
+        data-description="Court-métrage abordant l'exclusion liée aux réseaux sociaux."
+        data-extra="Outils : Premiere Pro | Montage | Réalisation">
+        Voir plus
+      </button>
+    </div>
+
+    <!-- INTERVIEW -->
+    <div class="card">
+      <img src="img/miniature_itw_mmi.png" />
+      <h3>Interview BUT MMI</h3>
+      <p>Interview vie étudiante</p>
+      <button class="open-modal"
+        data-title="Interview BUT MMI"
+        data-description="Interview réalisée sur la vie étudiante en BUT MMI."
+        data-extra="Outils : CapCut | Premiere Pro | Tournage">
+        Voir plus
+      </button>
+    </div>
+
+    <!-- KARMINE CORP -->
+    <div class="card">
+      <img src="img/affiche_kcb.jpg" />
+      <h3>Visuel Karmine Corp Blue</h3>
+      <p>Affiche e-sport</p>
+      <button class="open-modal"
+        data-title="Karmine Corp Blue Poster"
+        data-description="Création visuelle d'affiches de match e-sport."
+        data-extra="Outils : Photoshop | Illustrator | Design graphique">
+        Voir plus
+      </button>
+    </div>
+
   </div>
+</section>
 
-  <div class="card scroll-reveal">
-    <img src="img/projet4.png" alt="Capture du projet 4" />
-    <h3>?</h3>
-    <p>Réalisation d'un jeu vidéo d'enquêtes, Eveybody's Guilty</p>
-    <button onclick="window.open('https://github.com/tonprofil/projet3', '_blank')">Voir le code</button>
-  </div>
+</main>
 
-<div class="card scroll-reveal">
-    <img src="img/miniature_virtualduality.png" alt="Miniature cours-métrage Virtual Duality" />
-    <h3>Réalisation d'un cours-métrage pour le Deauville Green Awards</h3>
-    <p>Cours-métrage sur l'exclusion liée aux réseaux sociaux (Premiere Pro)</p>
-    <button onclick="window.open('https://youtu.be/G3OREm24Xyo', '_blank')">Consulter la vidéo</button>
-  </div>
-
-  <div class="card scroll-reveal">
-    <img src="img/miniature_itw_mmi.png" alt="Miniature interview MMI" />
-    <h3>Interview vie étudiante en BUT MMI</h3>
-    <p>Interview sur les étudiants du BUT MMI, réalisé avec CapCut, Premiere Pro</p>
-    <button onclick="window.open('https://youtu.be/G3OREm24Xyo', '_blank')">Consulter la vidéo</button>
-  </div>
-
-<div class="card scroll-reveal">
-    <img src="img/affiche_kcb.jpg" alt="Affiche Karmine Corp Blue" />
-    <h3>Visuel de match e-sport</h3>
-    <p>Création visuelle d'affiches de match e-sport de la Karmine Corp et son équipe Académique</p>
-    <button onclick="window.open('https://www.behance.net/gallery/244028059/KARMINE-CORP-BLUE-FINAL-WEEK-END-Poster', '_blank')">Emmenez-moi</button>
+<!-- MODAL UNIQUE -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+    <div id="modal-extra"></div>
   </div>
 </div>
 
+<footer>
+  <p>Portfolio réalisé en Novembre 2025 par Charles Prévost</p>
+</footer>
 
-
-
-
-    </section>
-
-    <section id="contact" class="scroll-reveal">
-      <h2>Contact</h2>
-      <p>Vous voulez me contacter ? Cela se passe juste en dessous !</p>
-      <div class="contact-list">
-        <div class="contact-item">
-              <button><a href="mailto:charles.pvst1708@gmail.com">charles.pvst1708@gmail.com</button>
-              <button><a href="https://www.linkedin.com/in/charles-prevost-93156b304/">LinkedIn</a></button>
-          <p>
-        </div>
-    </section>
-  </main>
-
-  <button class="back"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-120v-567l-64 63-56-56 160-160 160 160-56 56-64-63v567h-80Z"/></svg></button>
-
-  <footer class="scroll-reveal">
-    <p>Portfolio réalisé en Novembre 2025 par Charles Prévost</p>
-  </footer>
-
-  <script src="script.js"></script>
-  <script src="backbutton.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
