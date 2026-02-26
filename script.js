@@ -55,29 +55,6 @@ window.onclick = function(event) {
   }
 }
 
-const modal = document.getElementById("project-modal");
-const modalTitle = document.getElementById("modal-title");
-const modalDescription = document.getElementById("modal-description");
-const modalExtra = document.getElementById("modal-extra");
-const closeBtn = document.querySelector(".modal .close");
 
-document.querySelectorAll(".open-modal").forEach(button => {
-  button.addEventListener("click", () => {
-    modalTitle.textContent = button.dataset.title;
-    modalDescription.textContent = button.dataset.description;
-    modalExtra.textContent = button.dataset.extra;
-    modal.classList.add("show");
-  });
-});
-
-closeBtn.addEventListener("click", () => {
-  modal.classList.remove("show");
-});
-
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.classList.remove("show");
-  }
-});
 
 
