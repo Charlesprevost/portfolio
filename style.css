@@ -287,7 +287,7 @@ button:hover {
    =========================== */
 .btn {
   padding: 10px 20px;
-  background-color: #F0A500;
+  background-color: #ffffff;
   color: #161616;
   text-decoration: none;
   border-radius: 8px;
@@ -297,7 +297,7 @@ button:hover {
 
 .btn:hover,
 .btn:focus {
-  background-color: #d88e00;
+  background-color: #bdbdbd;
   outline: none;
 }
 
@@ -505,7 +505,7 @@ body.fade-in {
 }
 
 .modal .close {
-  color: #F0A500;
+  color: #ffffff;
   position: absolute;
   top: 15px;
   right: 20px;
@@ -588,8 +588,144 @@ body.fade-in {
 }
 
 
+/* ===========================
+   MODALE STRUCTURE PRO
+=========================== */
 
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
+.modal-content {
+  background: var(--base-variant);
+  color: var(--text-color);
+  width: 90%;
+  max-width: 950px;
+  border-radius: 20px;
+  padding: 50px 40px 40px 40px;
+  position: relative;
+  animation: popUp 0.3s ease forwards;
+}
+
+/* ===========================
+   CROIX
+=========================== */
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+/* ===========================
+   ZONE BOUTON
+=========================== */
+
+.modal-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.modal-btn {
+  padding: 12px 24px;
+  background: var(--button-back-color);
+  color: var(--button-color);
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.modal-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ===========================
+   BODY TEXTE + IMAGE
+=========================== */
+
+.modal-body {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.modal-text {
+  flex: 1;
+}
+
+.modal-text h2 {
+  margin-bottom: 15px;
+}
+
+.modal-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.modal-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+@keyframes popUp {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .modal-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .modal-header {
+    justify-content: center;
+  }
+
+  .modal-image img {
+    max-width: 100%;
+  }
+}
 
 
 
