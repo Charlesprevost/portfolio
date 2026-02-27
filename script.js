@@ -55,6 +55,34 @@ window.onclick = function(event) {
   }
 }
 
+// ===========================
+// MODALES PROJETS
+// ===========================
 
+const modalButtons = document.querySelectorAll('[data-modal]');
+const modals = document.querySelectorAll('.modal');
+const closeButtons = document.querySelectorAll('.close');
+
+modalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modalId = button.getAttribute('data-modal');
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'flex';
+  });
+});
+
+closeButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.modal').style.display = 'none';
+  });
+});
+
+window.addEventListener('click', (e) => {
+  modals.forEach(modal => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
 
 
