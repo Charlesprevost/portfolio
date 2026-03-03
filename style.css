@@ -683,6 +683,10 @@ body.fade-in {
    color:white;
 }
 
+.modal-text a:visited {
+   color: #4da6ff;
+}
+
 .modal-image {
   flex: 1;
   display: flex;
@@ -730,6 +734,7 @@ body.fade-in {
     max-width: 100%;
   }
 }
+
 
 
 
