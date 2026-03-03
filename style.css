@@ -679,6 +679,10 @@ body.fade-in {
   line-height: 1.6;
 }
 
+.modal-text a{
+   color:white;
+}
+
 .modal-image {
   flex: 1;
   display: flex;
@@ -726,6 +730,7 @@ body.fade-in {
     max-width: 100%;
   }
 }
+
 
 
 
