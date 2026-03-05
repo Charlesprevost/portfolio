@@ -126,7 +126,7 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 90px;
   box-sizing: border-box;
 }
 
@@ -821,6 +821,7 @@ body.fade-in {
   }
 
 }
+
 
 
 
