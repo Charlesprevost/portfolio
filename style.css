@@ -10,9 +10,7 @@
 @font-face { font-family: Montserrat; src: url('fonts/Montserrat-Regular.ttf'); } 
 @font-face { font-family: MontserratSB; src: url('fonts/Montserrat-SemiBold.ttf'); }
 
-/* ===========================
-   Variables
-   =========================== */
+
 :root{
   --base-color: white;
   --base-variant: #e8e9ed;
@@ -35,9 +33,7 @@
   --button-back-color: #2400f0;
 }
 
-/* ===========================
-   Reset
-   =========================== */
+
 *{
   margin: 0;
   padding: 0;
@@ -76,9 +72,7 @@
   display: block;
 }
 
-/* ===========================
-   Base Styles
-   =========================== */
+
 html {
   scroll-behavior: smooth;
 }
@@ -821,6 +815,7 @@ body.fade-in {
   }
 
 }
+
 
 
 
