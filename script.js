@@ -26,14 +26,14 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-      observer.unobserve(entry.target); // Ne se joue qu’une fois
+      observer.unobserve(entry.target);
     }
   });
 }, {
-  threshold: 0.2 // déclenche quand 20% est visible
+  threshold: 0.2
 });
 
-// Sélectionne tous les éléments à faire apparaître
+
 document.querySelectorAll('.scroll-reveal').forEach(el => {
   observer.observe(el);
 });
@@ -47,7 +47,6 @@ function closeModal() {
   document.getElementById("popup-modal").style.display = "none";
 }
 
-// Fermer si on clique en dehors du contenu
 window.onclick = function(event) {
   const modal = document.getElementById("popup-modal");
   if (event.target === modal) {
@@ -84,5 +83,6 @@ window.addEventListener('click', (e) => {
     }
   });
 });
+
 
 
